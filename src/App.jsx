@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import BookDetails from './components/BookDetails';
 import Heading from './components/Heading';
 import Faq from './components/Faq';
+import ContactIcon from './components/ContactIcon';
 
 function App() {
   const [quantity, setQuantity] = useState(1);
@@ -113,6 +114,7 @@ function App() {
           />
         </div>
       )}
+      <ContactIcon></ContactIcon>
     </div>
   );
 }
