@@ -6,8 +6,7 @@ const Heading = ({ onBuyNow }) => {
       {/* Main Heading */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold text-blue-800 mb-4">
-          Books That Inspire, Stories That Stay – Shop Your Favorite Reads
-          Today!
+          The Productivity Masterclass
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Transform Your Life with the #1 Bestselling Book That's Changing How
@@ -22,13 +21,17 @@ const Heading = ({ onBuyNow }) => {
           <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-8 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 alt="The Productivity Masterclass Book Cover"
                 className="w-full h-auto rounded-lg shadow-2xl mx-auto max-w-sm"
               />
               {/* Best Seller Badge */}
               <div className="absolute -top-4 -right-4 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg transform rotate-12">
                 <span className="font-bold text-sm">#1 BESTSELLER</span>
+              </div>
+              {/* Limited Stock Badge */}
+              <div className="absolute -bottom-4 -left-4 bg-red-500 text-white px-3 py-1 rounded-full shadow-lg">
+                <span className="font-bold text-sm">🔥 LIMITED STOCK</span>
               </div>
             </div>
           </div>
@@ -37,7 +40,7 @@ const Heading = ({ onBuyNow }) => {
           <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
             <div className="flex items-center space-x-4">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&h=80&q=80"
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80"
                 alt="Dr. James Wilson - Author"
                 className="w-16 h-16 rounded-full object-cover border-2 border-blue-500 shadow-md"
               />
@@ -50,8 +53,32 @@ const Heading = ({ onBuyNow }) => {
                 </p>
                 <div className="flex text-yellow-400 text-sm mt-1">
                   {'★'.repeat(5)}
+                  <span className="text-gray-600 ml-2">
+                    4.9/5 Author Rating
+                  </span>
                 </div>
               </div>
+            </div>
+            <p className="text-gray-700 text-sm mt-3">
+              With over 15 years of experience coaching Fortune 500 executives
+              and entrepreneurs, Dr. Wilson has helped thousands achieve peak
+              performance through his proven methods.
+            </p>
+          </div>
+
+          {/* Quick Stats */}
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
+              <div className="text-2xl font-bold text-blue-600">50K+</div>
+              <div className="text-xs text-gray-600">Copies Sold</div>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
+              <div className="text-2xl font-bold text-green-600">4.9★</div>
+              <div className="text-xs text-gray-600">Rating</div>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
+              <div className="text-2xl font-bold text-purple-600">12</div>
+              <div className="text-xs text-gray-600">Chapters</div>
             </div>
           </div>
         </div>
@@ -79,33 +106,46 @@ const Heading = ({ onBuyNow }) => {
               complete system for transforming how you work and live.
             </p>
 
-            <div className="space-y-3 mb-6">
-              <div className="flex items-center">
-                <span className="text-green-500 mr-3 text-xl">✓</span>
-                <span className="text-gray-700">
-                  25+ actionable productivity frameworks
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 mr-3 text-xl">✓</span>
-                <span className="text-gray-700">
-                  Time management techniques that actually work
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 mr-3 text-xl">✓</span>
-                <span className="text-gray-700">
-                  Digital workbook with exercises and templates
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-green-500 mr-3 text-xl">✓</span>
-                <span className="text-gray-700">
-                  Lifetime access to exclusive online resources
-                </span>
+            {/* What You'll Learn */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">
+                🎯 What You'll Master:
+              </h4>
+              <div className="grid grid-cols-1 gap-2">
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700">
+                    The 25+ most effective productivity frameworks
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700">
+                    Time management techniques backed by science
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700">
+                    Digital workbook with 50+ exercises and templates
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700">
+                    Lifetime access to exclusive online resources
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700">
+                    Habit formation strategies that actually stick
+                  </span>
+                </div>
               </div>
             </div>
 
+            {/* Pricing & Offer */}
             <div className="bg-white p-6 rounded-lg shadow-inner mb-6 border-2 border-yellow-200">
               <div className="flex items-baseline justify-between mb-4">
                 <div>
@@ -120,21 +160,50 @@ const Heading = ({ onBuyNow }) => {
                   30% OFF
                 </span>
               </div>
-              <p className="text-green-600 font-semibold">
+              <p className="text-green-600 font-semibold mb-2">
                 🚀 Limited Time Offer: Includes FREE Shipping + Digital Bonuses
               </p>
+              <div className="flex items-center text-sm text-gray-600">
+                <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded mr-2">
+                  ⚡
+                </span>
+                <span>Only 127 copies left at this price!</span>
+              </div>
             </div>
 
-            <button
-              onClick={onBuyNow}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl"
-            >
-              Buy Now - Transform Your Productivity Today
-            </button>
+            {/* CTA Buttons */}
+            <div className="space-y-4">
+              <button
+                onClick={onBuyNow}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl"
+              >
+                📚 Buy Now - Transform Your Productivity Today
+              </button>
 
-            <p className="text-center text-gray-600 mt-4 text-sm">
-              📦 Free Worldwide Shipping • 30-Day Money-Back Guarantee
-            </p>
+              <div className="text-center">
+                <button className="text-blue-600 hover:text-blue-700 font-semibold text-sm">
+                  📖 Read Free Sample Chapter →
+                </button>
+              </div>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="text-center mt-6 pt-6 border-t border-gray-200">
+              <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-1">✓</span>
+                  <span>30-Day Money-Back Guarantee</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-1">✓</span>
+                  <span>Free Worldwide Shipping</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-green-500 mr-1">✓</span>
+                  <span>Instant Digital Access</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -353,6 +422,7 @@ const Heading = ({ onBuyNow }) => {
           </div>
         </div>
       </div>
+
       {/* Testimonials */}
       <div className="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-gray-200">
         <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">

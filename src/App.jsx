@@ -73,18 +73,23 @@ function App() {
 
   // Checkout section ref
   const checkoutRef = useRef(null);
-  const scrollToCheckout = () => {
-    checkoutRef.current?.scrollIntoView({ behavior: 'smooth' });
+
+  // ✅ Buy Now handler
+  const handleBuyNow = () => {
+    setShowCheckout(true);
+    setTimeout(() => {
+      checkoutRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100); // delay ensures CheckoutModal is rendered before scrolling
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Navbar quantity={quantity} setShowCheckout={setShowCheckout} />
-      {/* heading */}
-      <Heading onBuyNow={scrollToCheckout} />
+      {/* Heading */}
+      <Heading onBuyNow={handleBuyNow} />
       {/* Faq */}
       <Faq />
-      {/* book details or checkout */}
+      {/* Book Details or Checkout */}
       {!showCheckout ? (
         <BookDetails
           book={book}
