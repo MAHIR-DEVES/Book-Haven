@@ -5,10 +5,11 @@ const Heading = ({ onBuyNow }) => {
     <div className="max-w-7xl mx-auto px-4 py-12">
       {/* Main Heading */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-blue-800 mb-4">
-          The Productivity Masterclass
+        <h1 className="text-xl md:text-5xl font-bold text-blue-800 mb-4">
+          Books That Inspire, Stories That Stay – Shop Your Favorite Reads
+          Today!
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="md:text-xl text-gray-600 max-w-2xl mx-auto">
           Transform Your Life with the #1 Bestselling Book That's Changing How
           People Work and Live
         </p>
@@ -175,7 +176,7 @@ const Heading = ({ onBuyNow }) => {
             <div className="space-y-4">
               <button
                 onClick={onBuyNow}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white md:text-lg font-bold py-4 md:px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 hover:shadow-xl"
               >
                 📚 Buy Now - Transform Your Productivity Today
               </button>
